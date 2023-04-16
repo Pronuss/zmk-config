@@ -49,7 +49,7 @@
 			bindings = <
 			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp LT &kp LPAR  &kp RPAR &kp O   &kp P    &kp BSPC
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp GT &kp LBKT  &kp RBKT &kp L   &kp PLUS &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp  a  &kp LBRC  &kp RBRC &kp DOT &kp MINUS &kp RSHFT
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp  A  &kp LBRC  &kp RBRC &kp DOT &kp MINUS &kp RSHFT
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RALT
 			>;
 
