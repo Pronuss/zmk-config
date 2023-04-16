@@ -48,10 +48,10 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT | LSFT(KC_7) |   RALT(KC_8)  |  RALT(KC_9)   |     |    |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   | SPACE | RALT(KC_MINS)  |         |         |
 			bindings = <
-			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp LT    &kp LPAR  &kp RPAR &kp O   &kp P    &kp BSPC
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp GT    &kp LBRC  &kp RBRC &kp L   &kp PLUS &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp SLASH &kp LBKT  &kp RBKT &kp DOT &kp MINUS &kp RSHFT
-							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp BSLH &kp SPACE &kp RALT
+			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp KC_NUBS        &kp LSFT(KC_8)  &kp LSFT(KC_9) &trans   &trans    &trans
+			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp LSFT(KC_NUBS)  &kp RALT(KC_7)  &kp RALT(KC_0) &trans   &trans    &trans
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp LSFT(KC_7)     &kp RALT(KC_8)  &kp RALT(KC_9) &trans   &trans    &trans
+							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp RALT(KC_MINS)  &trans &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
