@@ -43,10 +43,10 @@
 
 		lower {
 			// ---------------------------------------------------------------------------------------------------------------------------------
-			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  LT   |  LPAR   |  RPAR   |     |    |    |
-			// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  GT   |  LBRC   |  RBRC   |     |    |    |
-			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT | SLASH |   LBKT  |  RBKT   |     |    |    |
-			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   | SPACE | BSLH  |         |         |
+			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  KC_NUBS   |  LSFT(KC_8)   |  LSFT(KC9)   |     |    |    |
+			// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  LSFT(KC_NUBS)   |  RALT(KC7)   |  RALT(KC_0)   |     |    |    |
+			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT | LSFT(KC_7) |   RALT(KC_8)  |  RALT(KC_9)   |     |    |    |
+			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   | SPACE | RALT(KC_MINS)  |         |         |
 			bindings = <
 			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp LT    &kp LPAR  &kp RPAR &kp O   &kp P    &kp BSPC
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp GT    &kp LBRC  &kp RBRC &kp L   &kp PLUS &kp RET
@@ -59,7 +59,7 @@
 
 		upper {
 			// ---------------------------------------------------------------------------------------------------------------------------------
-			// |  ESC  |RGB ON|RGB OFF|  E   |  R   |  T   |                                          |      |  7    |  8    |  9   |     |    |
+			// |  ON  | OFF 	|RGB OFF|  E   |  R   |  T   |                                          |      |  7    |  8    |  9   |     |    |
 			// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |      |  4    |  5    |  6   |     |    |
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |      |  1    |  2    |  3   |     |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
