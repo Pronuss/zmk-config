@@ -50,7 +50,7 @@
 			bindings = <
 			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp A        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp LS(A)  &kp RA(N7)  &kp RA(N0) &trans   &trans    &trans
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp LS(N7)     &kp RA(KC_8)  &kp RA(KC_9) &trans   &trans    &trans
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp LS(N7)     &kp RA(N8)  &kp RA(N9) &trans   &trans    &trans
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp RA(A)  &trans &trans
 			>;
 
