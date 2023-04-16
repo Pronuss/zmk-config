@@ -48,8 +48,8 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT | LSFT(N7) |   RALT(N8)  |  RALT(N9)   |     |    |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   | SPACE | RALT(KC_MINS)  |         |         |
 			bindings = <
-			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp 0x64        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp LS(PIPE)  &kp RA(N7)  &kp RA(N0) &trans   &trans    &trans
+			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp 0x35        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
+			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp LS(0x35)  &kp RA(N7)  &kp RA(N0) &trans   &trans    &trans
 			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp LS(N7)     &kp RA(N8)  &kp RA(N9) &trans   &trans    &trans
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp RA(A)  &trans &trans
 			>;
