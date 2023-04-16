@@ -55,7 +55,7 @@
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-/*
+
 		upper {
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Z   |  7    |  8    |  9   |   P   |  BSPC |
@@ -63,15 +63,15 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  1    |  2    |  3   |   -   | Shift |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  | TAB  |  0  |       |
 			bindings = <
-			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                               &kp  &kp N7  &kp N8 &kp N9   &kp P    &kp BSPC
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                               &kp  &kp N4  &kp N5 &kp N6   &kp PLUS &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP   &kp  &kp N1  &kp N2 &kp N3 &kp MINUS &kp RSHFT
-							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN &kp  &kp N0  &kp RALT
+			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                               &kp A &kp N7  &kp N8 &kp N9   &kp P    &kp BSPC
+			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                               &kp A &kp N4  &kp N5 &kp N6   &kp PLUS &kp RET
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP   &kp A&kp N1  &kp N2 &kp N3 &kp MINUS &kp RSHFT
+							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN &kp A &kp N0  &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-
+/*
 		mod {
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Z   |  U    |  I    |  O   |   P   |  BSPC |
