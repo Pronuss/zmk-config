@@ -12,6 +12,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/bt.h>
 
 /* Uncomment this block if using RGB
 &led_strip {
@@ -48,15 +49,15 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT | /    |  {   |  }   |     |    |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   | SPACE | RALT(KC_MINS)  |         |         |
 			bindings = <
-			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp 0x35        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp LS(0x35)  &kp RA(N5)  &kp RA(N6) &trans   &trans    &trans
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP    &kp LS(N7)     &kp RA(N8)  &kp RA(N9) &trans   &trans    &trans
-							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp 0x92      &trans &trans
+			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                               &kp 0x35        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
+			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                               &kp LS(0x35)  &kp RA(N5)  &kp RA(N6) &trans   &trans    &trans
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT           &trams &trans   &kp LS(N7)     &kp RA(N8)  &kp RA(N9) &trans   &trans    &trans
+							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT           &trans  &trans  &kp 0x92      &trans &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-
+	
 		upper {
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  ON  | OFF 	|RGB OFF|  E   |  R   |  T   |                                          |      |  7    |  8    |  9   |     |    |
@@ -64,7 +65,7 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |      |  1    |  2    |  3   |     |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
 			bindings = <
-			&rgb_ug RGB_ON   &rgb_ug RGB_OFF &rgb_ug RGB_OFF &kp E &kp R &kp T                                            &trans &kp N7  &kp N8 &kp N9   &trans    &trans
+			&rgb_ug RGB_ON   &rgb_ug RGB_OFF &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL                                            &trans &kp N7  &kp N8 &kp N9   &trans    &trans
 			&rgb_ug RGB_TOG  &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_EFF &rgb_ug RGB_EFR                                            &trans &kp N4  &kp N5 &kp N6   &trans    &trans
 			&rgb_ug RGB_SAD &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD &kp B &kp LSHFT &kp LSHFT        &trans  &trans  &trans &kp N1  &kp N2 &kp N3   &trans    &trans
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &trans  &trans  &trans &kp N0  &trans
