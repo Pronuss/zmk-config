@@ -30,13 +30,13 @@
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Z   |  U    |  I    |  O   |   P   |  BSPC |
 			// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   +   | ENTER |
-			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT |   UP    |  N   |  M    |  ,    |  .   |   -   | Shift |
-			//                     | mod  | upper| lower|  L CTRL |   L ALT |  |   LEFT  |  DOWN   | RIGHT  | SPACE  | R-ALT |
+			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | LCTRL | ROT     |  | L SHIFT |   UP    |  N   |  M    |  ,    |  .   |   -   | Shift |
+			//                     | mod  | upper| lower|  LGUI |   L ALT |  |   LEFT  |  DOWN   | RIGHT  | SPACE  | R-ALT |
 			bindings = <
 			&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp PLUS &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp RSHFT
-							&mo mod &mo upper &mo lower &kp LCTRL &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RALT
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LCTRL &trans          &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp RSHFT
+							&mo mod &mo upper &mo lower &kp LGUI &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RCTRL
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -44,15 +44,15 @@
 
 		lower {
 			// ---------------------------------------------------------------------------------------------------------------------------------
-			// |  !  |  "  |  §  |  $   |  %   |  &   |                                             |  <   |  (   |  )   |  =   |    |    |
-			// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  >   |  [   |  ]   |     |    |    |
-			// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   |      |         |  |                  |  | /    |  {   |  }   |     |    |    |
-			//                     | GUI  | DEL  | RET  |   |      |  |      |  | RALT(KC_MINS)  |         |         |
+			// |  !  |  "  |  §  |  $   |  %   |  &   |                                             |  <   |  (   |  )   |  =   |     |  Ü  |
+			// |    |    |    |    |     |     |                                                    |  >   |  [   |  ]   |      |  Ö  |  Ä  |
+			// |  |    |    |     |     |     |   |      |         |  |                  |  | /    |  {   |  }   |     |    |    |
+			//                     |   |   |   |   |      |  |      |  | RALT(KC_MINS)  |         |         |
 			bindings = <
-			&kp LS(N1)   &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6)                                               &kp 0x35        &kp LS(N8)  &kp LS(N9) &trans   &trans    &trans
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                               &kp LS(0x35)  &kp RA(N5)  &kp RA(N6) &trans   &trans    &trans
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT           &trans &trans   &kp LS(N7)     &kp RA(N8)  &kp RA(N9) &trans   &trans    &trans
-							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT           &trans  &trans  &kp 0x92      &trans &trans
+			&kp LS(N1)	&kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)	&kp LS(N6)                   									&kp 0x35        &kp LS(N8)  &kp LS(N9) &kp LS(N0)   &trans    &kp LBKT
+			&trans    	&trans     	&trans      &trans     	&trans      &trans                                               			&kp LS(0x35)  	&kp RA(N5)  &kp RA(N6) &trans   	&trans    &trans
+			&trans 		&trans  	&trans  	&trans 		&trans 		&trans 		&trans 		&trans          &trans 		&trans   	&kp LS(N7)     	&kp RA(N8)  &kp RA(N9) &trans   	&trans    &trans
+												&trans 		&trans 		&trans 		&trans 		&trans      	&trans  	&trans  	&kp 0x92		&trans 		&trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
