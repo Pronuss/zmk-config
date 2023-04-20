@@ -34,8 +34,8 @@
 			//                     | mod  | upper| lower|  LGUI |   L ALT |  |   LEFT  |  DOWN   | RIGHT  | SPACE  | R-ALT |
 			bindings = <
 			&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
-			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp PLUS &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LCTRL &trans          &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp RSHFT
+			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp RBKT &kp RET
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LCTRL &trans          &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp NUHS &kp RSHFT
 							&mo mod &mo upper &mo lower &kp LGUI &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RCTRL
 			>;
 
