@@ -35,7 +35,7 @@
 			bindings = <
 			&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp RBKT &kp RET
-			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LCTRL &trans          &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp NUHS &kp RSHFT
+			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LCTRL &trans          &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 							&mo mod &mo upper &mo lower &kp LGUI &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RCTRL
 			>;
 
@@ -45,12 +45,12 @@
 		lower {
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  !  |  "  |  §  |  $   |  %   |  &   |                                             |  <   |  (   |  )   |  =   |     |  Ü  |
-			// |  °  |  ^  |    |    |     |     |                                                    |  >   |  [   |  ]   |      |  Ö  |  Ä  |
+			// |  °  |  ^  |  #  |  '  |     |     |                                                    |  >   |  [   |  ]   |      |  Ö  |  Ä  |
 			// |  |    |    |     |     |     |   |      |         |  |                  |  | /    |  {   |  }   |     |    |    |
 			//                     |   |   |   |   |      |  |      |  | RALT(KC_MINS)  |         |         |
 			bindings = <
-			&kp LS(N1)	&kp LS(N2)	&kp LS(N3)	&kp LS(N4)	&kp LS(N5)	&kp LS(N6)                   									&kp 0x35        &kp LS(N8)  &kp LS(N9) &kp LS(N0)   &trans    &kp LBKT
-			&trans    	&trans     	&trans      &trans     	&trans      &trans                                               			&kp LS(0x35)  	&kp RA(N5)  &kp RA(N6) &trans   	&kp SEMI  &kp SQT
+			&kp LS(N1)	  &kp LS(N2) &kp LS(N3)	&kp LS(N4)	&kp LS(N5)	&kp LS(N6)                   									&kp 0x35        &kp LS(N8)  &kp LS(N9) &kp LS(N0)   &trans    &kp LBKT
+			&kp LS(TILDE) &kp TILDE   &kp NUHS   &kp LS(NUHS) &trans      &trans                                               			&kp LS(0x35)  	&kp RA(N5)  &kp RA(N6) &trans   	&kp SEMI  &kp SQT
 			&trans 		&trans  	&trans  	&trans 		&trans 		&trans 		&trans 		&trans          &trans 		&trans   	&kp LS(N7)     	&kp RA(N8)  &kp RA(N9) &trans   	&trans    &trans
 												&trans 		&trans 		&trans 		&trans 		&trans      	&trans  	&trans  	&kp RALT(MINUS)		&trans 		&trans
 			>;
