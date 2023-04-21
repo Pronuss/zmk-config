@@ -65,7 +65,7 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |      |  1    |  2    |  3   |     |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
 			bindings = <
-			&rgb_ug RGB_ON   &rgb_ug RGB_OFF &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL                                          		    &trans &kp N7  &kp N8 &kp N9   &trans    &kp DEL
+			&rgb_ug RGB_ON   &rgb_ug RGB_OFF &trans &trans &trans &trans                                          		    &trans &kp N7  &kp N8 &kp N9   &trans    &kp DEL
 			&rgb_ug RGB_TOG  &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_EFF &rgb_ug RGB_EFR                     		    &trans &kp N4  &kp N5 &kp N6   &trans    &trans
 			&rgb_ug RGB_SAD &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD &kp B &kp LSHFT &kp LSHFT      &trans  &trans  &trans &kp N1  &kp N2 &kp N3   &trans    &trans
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        												&trans  &trans  &trans &kp N0  &trans
@@ -73,7 +73,7 @@
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-/*
+
 		mod {
 			// ---------------------------------------------------------------------------------------------------------------------------------
 			// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Z   |  U    |  I    |  O   |   P   |  BSPC |
@@ -81,14 +81,14 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   -   | Shift |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
+			&kp ESC   &kp A &kp W &kp E &kp R &kp T                                                &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL     &kp P    &kp BSPC
 			&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp PLUS &kp RET
 			&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp UP &kp N &kp M  &kp COMMA &kp DOT &kp MINUS &kp RSHFT
 							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};*/
+		};
 	};
 };
  
