@@ -39,7 +39,7 @@
 							&mo mod &mo upper &mo lower &kp LGUI  &kp LALT     &kp LEFT  &kp DOWN  &kp RIGHT &kp SPACE &kp RCTRL
 			>;
 
-			sensor-bindings = <&inc_dec_kp Y C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp LS(LA(C_VOL_UP)) LS(LA(C_VOL_DN))>;
 		};
 
 		lower {
