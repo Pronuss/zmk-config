@@ -81,7 +81,7 @@
 			// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |      |  1    |  2    |  3   |     |    |
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
 			bindings = <
-			&trans 	&trans 	&trans 	&trans 	&trans 	&trans 											&trans 	&kp LBKT &trans &p SEMI &trans 	&trans 
+			&trans 	&trans 	&trans 	&trans 	&trans 	&trans 											&trans 	&kp LBKT &trans &kp SEMI &trans 	&trans 
 			&trans 	&kp SQT 	&trans 	&trans 	&trans 	&trans 										&trans 	&trans 	&trans 	&trans 	&trans 	&trans 
 			&trans 	&trans 	&trans 	&trans 	&trans 	&trans 	&trans	&trans		&trans	&trans	&trans 	&trans 	&trans 	&trans 	&trans 	&trans 
 								 	&trans 	&trans 	&trans 	&trans	&trans		&trans	&trans	&trans 	&trans 	&trans 	
