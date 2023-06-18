@@ -65,10 +65,10 @@
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
 
 			bindings = <
-			&trans	  &kp LS(N2) &kp LS(N3)	&kp LS(N4)	&kp LS(N5)	&kp LS(N6)                   									&kp 0x35        &kp LS(N8)  &kp LS(N9) &kp LS(N0)   &trans    &kp LBKT
-			&kp LS(GRAVE) &kp GRAVE   &kp NUHS   &kp LS(NUHS) &kp  MINUS     &kp  LS(MINUS)                                             &kp LS(0x35)  	&kp RA(N5)  &kp RA(N6) &trans   	&kp SEMI  &kp SQT
-			&trans 		&trans  	&trans  	&trans 		&trans 		&trans 		&trans 		&trans          &trans 		&trans   	&kp LS(N7)     	&kp RA(N8)  &kp RA(N9) &trans   	&trans    &trans
-												&trans 		&trans 		&trans 		&trans 		&trans      	&trans  	&trans  	&kp RA(MINUS)		&trans 		&trans
+			&rgb_ug RGB_ON   &rgb_ug RGB_OFF &trans &trans &trans &trans                                          		    				&trans &kp N7  &kp N8 &kp N9   &trans    &kp DEL
+			&rgb_ug RGB_TOG  &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_EFF &rgb_ug RGB_EFR                     		    &trans &kp N4  &kp N5 &kp N6   &trans    &trans
+			&rgb_ug RGB_SAD &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &rgb_ug RGB_SPI &rgb_ug RGB_SPD &kp B &kp LSHFT &kp LSHFT      &trans  &trans  &trans &kp N1  &kp N2 &kp N3   &trans    &trans
+							&kp LGUI &kp DEL &kp RET &kp LCTRL &kp LALT        												&trans  &trans  &trans &kp N0  &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
