@@ -82,7 +82,7 @@
 			//                     | GUI  | DEL  | RET  |  L CTRL |   L ALT   |  |   RET   |  SPACE  |    |  0    |       |
 			bindings = <
 			&trans 	&trans 	&trans 	&trans 	&trans 	&trans 											&trans 	&kp LBKT &trans &kp SEMI &trans 	&trans 
-			&trans 	&kp SQT 	&trans 	&trans 	&trans 	&trans 										&trans 	&trans 	&trans 	&trans 	&trans 	&trans 
+			&trans 	&kp SQT 	&kp MINUS 	&trans 	&trans 	&trans 										&trans 	&trans 	&trans 	&trans 	&trans 	&trans 
 			&trans 	&trans 	&trans 	&trans 	&trans 	&trans 	&trans	&trans		&trans	&trans	&trans 	&trans 	&trans 	&trans 	&trans 	&trans 
 								 	&trans 	&trans 	&trans 	&trans	&trans		&trans	&trans	&trans 	&trans 	&trans 	
 			>;
