@@ -51,7 +51,7 @@
         combo_at {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp RALT(KC_Q)>;
+            bindings = <&kp RALT(Q)>;
         };
     };
 };
