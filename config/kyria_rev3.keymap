@@ -21,6 +21,34 @@
 	// chain-length = <25>; // Uncomment if using only per-key LEDs.
 };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_ae {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp SQT>;
+        };
+		compatible = "zmk,combos";
+        combo_oe {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp SEMI>;
+        };
+		compatible = "zmk,combos";
+        combo_ue {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp LBKT>;
+        };
+		compatible = "zmk,combos";
+        combo_ss {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&kp MINUS>;
+        };
+    };
+};
 
 / {
 	keymap {
