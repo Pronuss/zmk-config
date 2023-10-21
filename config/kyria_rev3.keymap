@@ -84,7 +84,7 @@
 			bindings = <
 			&kp LS(N1)	  &kp LS(N2) &kp LS(N3)	&kp LS(N4)	&kp LS(N5)	&kp LS(N6)                   									&kp 0x35        &kp LS(N8)  &kp LS(N9) &kp LS(N0)   &trans    &kp LBKT
 			&kp LS(GRAVE) &kp GRAVE   &kp NUHS   &kp LS(NUHS) &kp  MINUS     &kp  LS(MINUS)                                             &kp LS(0x35)  	&kp RA(N5)  &kp RA(N6) &trans   	&kp SEMI  &kp SQT
-			&trans 		&trans  	&trans  	&trans 		&trans 		&trans 		&trans 		&trans          &trans 		&trans   	&kp LS(N7)     	&kp RA(N8)  &kp RA(N9) &trans   	&trans    &trans
+			&kp RALT(Q) 		&trans  	&trans  	&trans 		&trans 		&trans 		&trans 		&trans          &trans 		&trans   	&kp LS(N7)     	&kp RA(N8)  &kp RA(N9) &trans   	&trans    &trans
 												&trans 		&trans 		&trans 		&trans 		&trans      	&trans  	&trans  	&kp RA(MINUS)		&trans 		&trans
 			>;
 
